@@ -5,6 +5,10 @@ html, body {
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .gradient {
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(black, #3eb5f1); /* For Safari 5.1 to 6.0 */
