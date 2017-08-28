@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gradient {
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #3eb5f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #3eb5f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #3eb5f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #3eb5f1 50%); /* Standard syntax (must be last) */
+}
+
+
+main {
+    height: 100%;
+    widows: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin:0px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.form div {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.random-btn {
+    background: #e2907a;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    min-width: 160px;
+    text-align: center;
+}
+
+
+.random-btn:hover {
+    cursor: pointer;
+}
+
+.fa-search {
+    color: white;
+    background: none;
+    border-left: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    min-width: 200px;
+}
+
+
+input:focus {
+    outline-width: 0;
+}
