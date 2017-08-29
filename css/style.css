@@ -27,6 +27,10 @@ main {
     justify-content: center;
 }
 
+.search-grid {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: white;
@@ -36,7 +40,7 @@ h1 {
 .form {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    margin: 8px auto 15px auto;
 }
 
 .form div {
@@ -47,12 +51,11 @@ h1 {
 .random-btn {
     background: #e2907a;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 5px;
     margin-top: 20px;
     min-width: 160px;
     text-align: center;
+    padding: 2px 25px;
 }
 
 
@@ -79,4 +82,19 @@ input {
 
 input:focus {
     outline-width: 0;
+}
+
+input::-moz-placeholder {  
+    color: white !important;
+}
+
+input::-webkit-input-placeholder{
+    color:white !important;  
+}
+input::-moz-placeholder {  
+    color: white !important;  
+}
+
+input:-ms-input-placeholder {  
+    color: white !important;
 }
