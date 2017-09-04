@@ -12,16 +12,22 @@ function Search(){
       format:"json"       
     },
     success: function (data){
-         console.log(data); 
-        /*
-      $(".results").empty();
-      for(var i = 0; i < data[1].length; i++){
-        // console.log(data); 
-        // console.log(data[1][i]); 
-        $(".results").append("<article><h2 id='title'><a href="+data[3][i]+" target='_blank'>"+data[1][i]+"</a></h2> <p id='content'>"+data[2][i]+"</p></article>");
-        $("article").append("");
-      }*/
+      var results = [];
+      for(var i = 0; i < data[1].length; i++) {
+        results.push({
+          title: data[1][i],
+          description: data[2][i],
+          link: data[3][i]
+        });
+      }
+      $("section").empty();
+      results.forEach(function(item){
+        var article = $("<article></article>");
+        article.addClass("result");
+        article.append("<h2>" + item.title + "</h2>");
+        article.append("<p>" + item.description + "</p>");
+        $("section").append(article);
+      });
     }
-  }
-);
+  });
 }
