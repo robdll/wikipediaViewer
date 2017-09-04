@@ -73,6 +73,7 @@ h1 {
 }
 
 input {
+    color: white !important;
     background: none;
     border: none;
     padding: 5px 10px;
@@ -97,4 +98,34 @@ input::-moz-placeholder {
 
 input:-ms-input-placeholder {  
     color: white !important;
+}
+
+section {
+    align-self: center;   
+    width: 80%;
+    margin-top: 30px;
+}
+
+.result {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;    
+    color: white;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline;
+    border-radius: 5px;
+    padding: 0px 2px;
+    font-weight: 500;
+}
+
+.result p {
+    margin: 3px 1px;
+    font-size: 0.8em;
 }
