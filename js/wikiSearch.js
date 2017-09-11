@@ -26,8 +26,14 @@ function Search(){
         article.addClass("result");
         article.append("<h2>" + item.title + "</h2>");
         article.append("<p>" + item.description + "</p>");
+        article.click({link: item.link}, openLink);
         $("section").append(article);
       });
     }
   });
+}
+
+function openLink(event){
+  console.log(event.data.link)
+  window.open(event.data.link, '_blank');
 }
