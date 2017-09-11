@@ -34,6 +34,5 @@ function Search(){
 }
 
 function openLink(event){
-  console.log(event.data.link)
   window.open(event.data.link, '_blank');
 }
