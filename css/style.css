@@ -22,19 +22,20 @@ a:hover, a:visited, a:link, a:active {
 
 main {
     height: 100%;
-    widows: 100%;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .search-grid {
     text-align: center;
 }
 
-h1 {
+.title {
+    font-size: 2em; 
     text-align: center;
     color: white;
     margin:0px;
@@ -52,6 +53,7 @@ h1 {
 }
 
 .random-btn {
+    font-size: 1.3em;
     background: #e2907a;
     color: white;
     border-radius: 5px;
@@ -80,7 +82,7 @@ input {
     background: none;
     border: none;
     padding: 5px 10px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 
@@ -145,4 +147,15 @@ footer {
     text-align: right;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+@media screen AND (max-width: 600px) { 
+    .title {
+        font-size: 2em;
+    }
+
+    #search, .random-btn {
+        font-size: 1.2em;
+    }
+
 }
